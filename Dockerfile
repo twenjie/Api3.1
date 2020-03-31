@@ -2,7 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim
 WORKDIR /app
-EXPOSE 8100
+EXPOSE 8200
 
 COPY . .
 ENTRYPOINT ["dotnet", "Api3.1.dll"]
