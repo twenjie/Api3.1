@@ -20,6 +20,7 @@ namespace Api3._1
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.UseUrls("http://*:8200");
                     webBuilder.UseStartup<Startup>();
                 });
     }
